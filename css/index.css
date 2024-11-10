@@ -1,19 +1,68 @@
-
-/* body {
+/* Estilos generales */
+body {
   font-family: Arial, sans-serif;
-  text-align: center;
-  margin-top: 50px;
+  background-color: #f4f7fb;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
-.button {
-  margin: 10px;
+
+.menu_inici {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Estilo de las secciones de información */
+p {
+  font-size: 16px;
+  color: #555;
+  margin: 10px 0;
+}
+
+strong {
+  color: #000;
+}
+
+/* Botón para iniciar la calculadora */
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
   padding: 10px 20px;
+  border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
-}
-.info-box {
   margin-top: 20px;
-  padding: 15px;
-  border: 1px solid #ccc;
-  display: inline-block;
-  text-align: left;
-}  */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Estilo para el contenedor de la información */
+span {
+  font-weight: bold;
+  color: #333;
+}
+

@@ -9,17 +9,13 @@
     <meta name="keywords" content="html,cheatsheet" />
     <meta property="fb:admins" content="YourFacebookUsername" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="stylesheet" href="css/normalised.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/imatge.css">
-    <link rel="stylesheet" href="css/botons.css">
-    <link rel="stylesheet" href="css/flex.css">
-    <link rel="stylesheet" href="../css/estudis.css">
+    <link rel="stylesheet" href="css/calculadora.css">
 
+  
 
 
 <!-- Prepare for second course --> 
-    <script src="/script.js"></script>
     <script src="js/index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
 <!-- If we use bootstrap
@@ -31,20 +27,37 @@
 
 </head> 
 <body> 
-
-     <button src="/html/calculadora.html">Obrir calculadora</button>
-   
  
-     <!-- Secció d'informació -->
-     <div class="info-box">
-         <h3>Informació del navegador</h3>
-         <p><strong>Navegador:</strong> <span id="browserName"></span></p>
-         <p><strong>Versió:</strong> <span id="browserVersion"></span></p>
-         <p><strong>Sistema Operatiu:</strong> <span id="os"></span></p>
-         <p><strong>Data última modificació:</strong> <span id="lastModified"></span></p>
-         <p><strong>Idioma:</strong> <span id="language"></span></p>
-         <p><strong>Hostname (URL):</strong> <span id="hostname"></span></p>
-     </div>
+  
+      <!-- Menú de inicio -->
+      <div class="menu_inici">
+          <h2>Informació del Navegador</h2>
+          <p><strong>Navegador Utilitzat:</strong> <span id="navegador"></span></p>
+          <p><strong>Versió del Navegador:</strong> <span id="version"></span></p>
+          <p><strong>Sistema Operatiu:</strong> <span id="so"></span></p>
+          <p><strong>Idioma:</strong> <span id="idioma"></span></p>
+          <p><strong>Hostname (URL):</strong> <span id="url"></span></p>
+          
+          <!-- Botón que redirige a la calculadora -->
+          <button onclick="irCalculadora()">Iniciar Calculadora</button>
+      </div>
+  
+      <script>
+          // Obtenir informació del navegador
+          document.getElementById("navegador").textContent = navigator.appName || "Navegador desconocido";
+          document.getElementById("version").textContent = navigator.appVersion || "Versión desconocida";
+          document.getElementById("so").textContent = navigator.platform || "SO desconocido";
+          document.getElementById("idioma").textContent = navigator.language || "Idioma desconocido";
+          document.getElementById("url").textContent = window.location.hostname || "URL desconocida";
+  
+          // Funció per a redirigir a la página de la calculadora
+          function irCalculadora() {
+              window.location.href = "./html/calculadora.html"; // Redirigir a calculadora.html
+          }
+      </script>
+  </body>
+  </html>
+  
      
      
    
