@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #090c31;
+}
+
+.calculadora {
+    background-color: #15173c;
+    color: white;
+    width: 350px;
+    max-width: 100%;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
+    gap: 0.5rem;
+}
+
+/* Pantalla principal */
+.pantalla {
+    grid-column: 1 / -1;
+    background-color: lightblue;
+    padding: 1.5rem;
+    font-size: 2rem;
+    text-align: right;
+    border-radius: 0.5rem;
+    font-family: monospace;
+    margin-bottom: 0.5rem;
+}
+
+/* Pantalla de error */
+.pantalla_error {
+    grid-column: 1 / -1;
+    background-color: #e65766;
+    padding: 0.5rem;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: none;
+}
+
+/* Botones generales */
+.btn {
+    background-color: #15173c;
+    color: white;
+    border: 0;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    height: 60px;
+}
+
+.btn:hover {
+    background-color: #090c31;
+}
+
+/* Botones de memoria y operadores científicos */
+#sin, #cos, #tan, #log {
+    font-size: 1rem;
+}
+
+/* Botón "igual" */
+#igual {
+    background-color: #e6394a;
+    grid-row: span 1;
+    height: 100%; /* Ocupa toda la altura de las dos filas */
+}
+
+#igual:hover {
+    background-color: #e65766;
+}
+
+/* Botón cero y otros ajustes en la última fila */
+#cero {
+    grid-column: span 1; /* Ocupa dos columnas en la última fila */
+}
+
+#C, .btn:last-child {
+    font-size: 1.2rem;
+}
