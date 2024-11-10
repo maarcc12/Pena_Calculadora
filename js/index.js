@@ -1,17 +1,4 @@
- // Funció per obrir la calculadora
- function launchCalculator() {
-    window.open('calculator.html', '_blank'); // Cambia 'calculator.html' per la URL de la teva calculadora
-}
 
-// Funció per anar a l'historial enrere
-function goBack() {
-    window.history.back();
-}
-
-// Funció per anar a l'historial endavant
-function goForward() {
-    window.history.forward();
-}
 
 // Funció per omplir la informació del navegador
 function fillBrowserInfo() {

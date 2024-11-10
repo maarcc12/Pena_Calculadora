@@ -19,7 +19,7 @@
 
 
 <!-- Prepare for second course --> 
-    <script src="/script.js"></script>
+    <script src="../js/calculadora.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
 <!-- If we use bootstrap
 
@@ -31,36 +31,33 @@
 </head> 
 <body> 
 
-    <div class="calculator">
-        <input type="text" id="display" class="display" readonly />
-
-        <div class="buttons">
-            <!-- Número y operadores -->
-            <button class="button" onclick="appendToDisplay('7')">7</button>
-            <button class="button" onclick="appendToDisplay('8')">8</button>
-            <button class="button" onclick="appendToDisplay('9')">9</button>
-            <button class="button operator" onclick="appendToDisplay('/')">÷</button>
-
-            <button class="button" onclick="appendToDisplay('4')">4</button>
-            <button class="button" onclick="appendToDisplay('5')">5</button>
-            <button class="button" onclick="appendToDisplay('6')">6</button>
-            <button class="button operator" onclick="appendToDisplay('*')">×</button>
-
-            <button class="button" onclick="appendToDisplay('1')">1</button>
-            <button class="button" onclick="appendToDisplay('2')">2</button>
-            <button class="button" onclick="appendToDisplay('3')">3</button>
-            <button class="button operator" onclick="appendToDisplay('-')">−</button>
-
-            <button class="button" onclick="appendToDisplay('0')">0</button>
-            <button class="button" onclick="appendToDisplay('.')">.</button>
-            <button class="button clear" onclick="clearDisplay()">C</button>
-            <button class="button operator" onclick="appendToDisplay('+')">+</button>
-
-            <button class="button equals" onclick="calculateResult()" style="grid-column: span 4;">=</button>
-        </div>
+  
+    <div class= "calculadora">
+        <div class="pantalla">0</div>
+        <div class="pantalla_error">Error</div>
+        <button id="C" class="btn">C</button>
+        <button id="borrar" class="btn">←</button>
+        <button class="btn">/</button>
+        <button class="btn">*</button>
+        <button class="btn">7</button>
+        <button class="btn">8</button>
+        <button class="btn">9</button>
+        <button class="btn">−</button>
+        <button class="btn">4</button>
+        <button class="btn">5</button>
+        <button class="btn">6</button>
+        <button class="btn">+</button>
+        <button class="btn">1</button>
+        <button class="btn">2</button>
+        <button class="btn">3</button>
+        <button class="btn" id="igual">=</button>
+        <button class="btn" id="cero">0</button>
+        <button class="btn">.</button>
+       
     </div>
-     
-   
+
+    <script src="../js/calculadora.js"></script>
+
 <!-- Content --> 
 </body> 
 </html> 
