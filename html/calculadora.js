@@ -8,7 +8,7 @@ botones.forEach(boton => {
 
         if (boton.id === "C") {
             pantalla.textContent = "0";
-            pantallaError.textContent = ""; // Limpiar mensaje de error al resetear
+            pantallaError.textContent = ""; // Limpiar cualquier mensaje de error
             return;
         }
 
@@ -18,17 +18,17 @@ botones.forEach(boton => {
             } else {
                 pantalla.textContent = pantalla.textContent.slice(0, -1);
             }
-            pantallaError.textContent = ""; // Limpiar mensaje de error al borrar
+            pantallaError.textContent = ""; // Limpiar cualquier mensaje de error
             return;
         }
 
         if (boton.id === "igual") {
             try {
                 pantalla.textContent = eval(pantalla.textContent.replace(/−/g, "-"));
-                pantallaError.textContent = ""; // Limpiar mensaje de error después de calcular correctamente
+                pantallaError.textContent = ""; // Limpiar el mensaje de error si la evaluación es exitosa
             } catch {
-                pantalla.textContent = "0"; // Resetear la pantalla
-                pantallaError.textContent = "Error: expresión inválida"; // Mostrar error si eval falla
+                pantallaError.textContent = "Error en la expresión"; // Mostrar error si la expresión no es válida
+                pantalla.textContent = "Error!";
             }
             return;
         }
@@ -38,7 +38,7 @@ botones.forEach(boton => {
         const ultimoNumero = partes[partes.length - 1]; // Obtén el último número ingresado
         
         if (ultimoNumero.length >= 5 && !isNaN(botonApretado)) {
-            pantallaError.textContent = "Error: máximo 5 dígitos por número"; // Mostrar mensaje de error
+            pantallaError.textContent = "Máximo 5 dígitos por número"; // Mostrar mensaje de error
             return;
         }
 
