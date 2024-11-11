@@ -1,13 +1,7 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
-}
 
 body{
   min-height: 100vh;
-  /* background-color: #090c31; */
+  background-color: #090c31; 
   display: grid;
   place-items: center;
 }

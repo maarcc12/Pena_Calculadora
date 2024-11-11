@@ -9,8 +9,8 @@
     <meta name="keywords" content="html,cheatsheet" />
     <meta property="fb:admins" content="YourFacebookUsername" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="stylesheet" href="../css/normalised.css">
-    <link rel="stylesheet" href="../Pena_Calculadora/css/index.css">
+    <link rel="stylesheet" href="/css/normalised.css">
+    <link rel="stylesheet" href="/css/index.css">
    
 
 
@@ -39,27 +39,12 @@
         <p><strong>Hostname (URL):</strong> <span id="url"></span></p>
         
         <!-- Botón que redirige a la calculadora -->
-        <button onclick="irCalculadora()">Iniciar Calculadora</button>
-        <button onclick="irCalculadoraCientifica()">Iniciar Calculadora Cientifica</button>
-
+        <a href="/html/calculadora.html"> Calculadora</a>
+        <a href="/html/calculadoraCientifica.html"> Calculadora Cientifica</a>
     </div>
 
-    <script>
-        // Obtener información del navegador
-        document.getElementById("navegador").textContent = navigator.appName || "Navegador desconocido";
-        document.getElementById("version").textContent = navigator.appVersion || "Versión desconocida";
-        document.getElementById("so").textContent = navigator.platform || "SO desconocido";
-        document.getElementById("idioma").textContent = navigator.language || "Idioma desconocido";
-        document.getElementById("url").textContent = window.location.hostname || "URL desconocida";
+    <script src="index.js"></script>
 
-        // Función para redirigir a la página de la calculadora
-        function irCalculadora() {
-            window.location.href = "/html/calculadora.html"; // Redirige a calculadora.html
-        }
-
-        function irCalculadoraCientifica() {
-            window.location.href = "/html/calculadoraCientifica.html"; // Redirige a calculadora.html
-        }
-    </script>
+   
 </body>
 </html> 
