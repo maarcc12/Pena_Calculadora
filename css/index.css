@@ -1,70 +1,66 @@
+/* index.css */
 
-body{
-  min-height: 100vh;
-  background-color: #090c31; 
-  display: grid;
-  place-items: center;
-}
-
-.calculadora {
-  background-color: #15173c;
-  color: white;
-  width: 350px;
-  max-width: 100%;
-  padding: 1.5rem;
-  border-radius: 1rem;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: .5rem;
-}
-
-.pantalla{
-  grid-column:  1 / -1;
-  background-color: lightblue;
-  padding: 1.5rem;
-  font-size: 2rem;
-  text-align: right;
-  border-radius: .5rem;
-  margin-bottom: 1rem;
-  font-family: monospace; /*Aixo ho treure potser*/
-}
-
-.pantalla_error{
-  grid-column:  1 / -1;
-  background-color: #e65766;
-  padding: .5rem;
-  font-size: 1rem;
-  text-align: center;
-  border-radius: .5rem;
-  margin-bottom: 1rem;
-  font-family: monospace; /*Aixo ho treure potser*/
-}
-
-.btn{
-  background-color: #15173c;
-  color: white;
-  border: 0;
-  padding: 1.5rem 0.5rem;
+/* Estilo para el cuerpo de la página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 0.5rem;
-
+  height: 100vh;
 }
 
-.btn:hover{
-  background-color:  #090c31;;
+/* Contenedor principal para el menú de inicio */
+.menu_inicio {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
 }
 
-#cero{
-  grid-column: span 2;
+/* Título del menú */
+.menu_inicio h2 {
+  font-size: 24px;
+  color: #4CAF50;
+  margin-bottom: 20px;
 }
 
-#igual{
-  grid-row: span 2;
-  background-color: #e6394a;
+/* Estilo para los párrafos de información */
+.menu_inicio p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 10px 0;
 }
 
-#igual:hover{
-  background-color: #e65766;
+/* Destacar el texto en negrita */
+.menu_inicio p strong {
+  color: #555;
+}
+
+/* Estilo para los enlaces a las calculadoras */
+.menu_inicio a {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.menu_inicio a:hover {
+  background-color: #45a049;
+}
+
+/* Estilo para los span que mostrarán la información del navegador */
+.menu_inicio span {
+  font-weight: bold;
+  color: #333;
 }
